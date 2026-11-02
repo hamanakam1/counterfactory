@@ -1,0 +1,18 @@
+{
+  "name": "counterfactory",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Executable failure models for agent workflows. Find the interleaving that breaks the promise.",
+  "license": "Apache-2.0",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node scripts/check.mjs",
+    "test:tools": "node --test tests/*.test.mjs",
+    "typecheck": "quint typecheck models/lost_ack_unsafe.qnt && quint typecheck models/lost_ack_safe.qnt",
+    "verify": "node scripts/verify.mjs",
+    "example": "node scripts/generate-example.mjs",
+    "release:package": "node scripts/package-release.mjs",
+    "demo": "node scripts/demo.mjs"
+  },
+  "devDependencies": { "@informalsystems/quint": "0.33.1" }
+}

@@ -1,0 +1,24 @@
+{
+  "format": "counterfactory.example.v1",
+  "quint": "0.33.1",
+  "command": [
+    "quint",
+    "run",
+    "models/lost_ack_unsafe.qnt",
+    "--backend=typescript",
+    "--step=lostAckStep",
+    "--seed=15728",
+    "--max-steps=8",
+    "--invariant=safety",
+    "--verbosity=1",
+    "--out-itf=examples/lost-ack/counterexample.itf.json"
+  ],
+  "scope": "Selected schedule of real model actions; not an exhaustive search.",
+  "sha256": {
+    "models/protocol.qnt": "0b709b9d258522465768ed18d6ab2024852c4eb725fc42207c6372fa9fa54394",
+    "models/lost_ack_unsafe.qnt": "2742255ac993d5ca7428156c483f27d0a717d5b1f02b671529db25fcf7247171",
+    "models/lost_ack_safe.qnt": "c7b239cbf48cd1d83a96abf756eb414e4478101a4b0671a401519c62364a010a",
+    "package-lock.json": "d1c0720f93389de0c24e364fca20f405cab3d1611ab11ff97ea18f7a69b53e36",
+    "examples/lost-ack/counterexample.itf.json": "5c3c7fe139647b8595c7f603efd4d6b4a9d337cfd0beae045b2d481bed23c5d7"
+  }
+}

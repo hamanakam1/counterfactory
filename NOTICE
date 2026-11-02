@@ -1,0 +1,6 @@
+Counterfactory
+Copyright 2026 Michael Hamanaka
+
+This project includes original executable models and tooling.
+Quint, Apalache, and TLC are separate upstream projects distributed under
+their respective licenses. They are not vendored in the source archive.

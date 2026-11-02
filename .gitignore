@@ -1,0 +1,8 @@
+node_modules/
+.quint/
+_apalache-out/
+.superpowers/
+build/
+dist/
+.DS_Store
+*.log
